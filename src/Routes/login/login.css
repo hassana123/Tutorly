@@ -1,0 +1,67 @@
+.login-section {
+  width: clamp(200px, 80%, 800px);
+  margin: auto;
+  height: 84vh;
+  margin-top: 100px;
+}
+.login-section form {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  margin: 30px 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  padding: 2px 0;
+  text-align: center;
+}
+.login-section h1 {
+  margin: 20px 0;
+}
+.login-section label {
+  display: block;
+  margin: 0 20px;
+  margin: auto;
+  font-size: 1.3em;
+  color: var(--tetiary-font-color);
+}
+.login-section form input {
+  margin: 20px 10px;
+  padding: 15px 10px;
+  width: 70%;
+  color: var(--tertiary-font-color);
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid var(--tetiary-font-color);
+  background: var(--main-background-color);
+}
+.login-section form input::placeholder {
+  font-size: 1.3em;
+  color: var(--tetiary-font-color);
+}
+.login-section form button {
+  background: var(--primary-btn-color);
+  margin: 20px;
+  width: 30%;
+  padding: 10px 0;
+  color: var(--main-background-color);
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border: none;
+}
+.login-section form button:hover {
+  background-color: var(--tetiary-font-color);
+}
+.login-section form button:disabled {
+  background: grey !important;
+  color: grey;
+  cursor: auto;
+}
+.redirect a {
+  color: var(--color-two);
+}

@@ -1,0 +1,152 @@
+.home {
+  margin-top: 120px;
+  width: 100%;
+}
+.home .find-a-tutor {
+  width: 98%;
+
+  display: grid;
+  z-index: 3;
+  grid-template-columns: 1.5fr 2fr;
+}
+.home .find-a-tutor div:nth-child(1) {
+}
+.home .find-a-tutor div:nth-child(1) h1 {
+  font-size: 3rem;
+  line-height: 1.2em;
+  margin: 0 10px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.home .find-a-tutor div:nth-child(1) p {
+  margin: 0 10px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.home .find-a-tutor div:nth-child(1) a {
+  text-decoration: none;
+  float: right;
+  color: var(--main-background-color);
+  padding: 20px 30px;
+  margin: 0 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  background: var(--primary-btn-color);
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 2s;
+}
+.home .find-a-tutor div:nth-child(1) a:hover {
+  background: var(--tetiary-font-color);
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 2s;
+}
+.home .find-a-tutor div:nth-child(2) {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+}
+.home .find-a-tutor div:nth-child(2) img {
+  width: 300px;
+  height: 300px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
+}
+.home .blob {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.home .one {
+  top: 35%;
+  left: 50%;
+  background: var(--primary-btn-color);
+}
+.home .two {
+  top: 80%;
+  background: var(--color-two);
+  left: 65%;
+}
+.home .three {
+  top: 83%;
+  background: var(--color-four);
+  left: 4%;
+}
+
+.home .how-it-works {
+  margin-top: 70px;
+  display: grid;
+  width: 98%;
+
+  height: fit-content;
+  grid-template-columns: 1.7fr 1.5fr;
+}
+.home .how-it-works div:nth-child(1) {
+  text-align: center;
+}
+
+.home .how-it-works div:nth-child(1) img {
+  width: 400px;
+  height: 400px;
+  border-radius: 71% 0% 13% 1% / 60% 40% 60% 40%;
+}
+.home .how-it-works div:nth-child(2) {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.home .how-it-works div:nth-child(2) h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 80px;
+  line-height: 1.2em;
+  margin-bottom: 40px;
+}
+.home .how-it-works div:nth-child(2) p {
+  margin: 0 10px;
+  margin-bottom: 40px;
+  color: #000000;
+}
+.home .how-it-works div:nth-child(2) a {
+  background: var(--primary-btn-color);
+  color: var(--main-background-color);
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 20px;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 2s;
+}
+.home .how-it-works div:nth-child(2) a:hover {
+  background: var(--tetiary-font-color);
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 2s;
+}
+@media screen and (max-width: 850px) {
+  .home .how-it-works div:nth-child(1) img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .home .blob {
+    display: none;
+  }
+  .home .how-it-works {
+    display: block;
+  }
+  .home .find-a-tutor {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .home .find-a-tutor div:nth-child(1) h1 {
+    font-size: 1.5rem;
+  }
+  .home .find-a-tutor div:nth-child(2) img {
+    width: 237px;
+    height: 237px;
+  }
+  .home .how-it-works div:nth-child(2) h1 {
+    font-size: 1.5rem;
+  }
+  .home .how-it-works div:nth-child(1) img {
+    width: 200px;
+    height: 200px;
+  }
+}

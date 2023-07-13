@@ -1,0 +1,22 @@
+:root {
+  --main-background-color: #ffffff;
+  --color-one: #efb140;
+  --color-two: #e35f50;
+  --color-three: #e9ca9e;
+  --color-four: #bcdff5;
+  --color-five: #e4e3df;
+  --color-six: #f7f2ee;
+  --color-seven: #935933;
+  --primary-font-color: #333333;
+  --secondary-font-color: #853bb8;
+  --tetiary-font-color: #15011a;
+  --primary-btn-color: #0dddc3;
+}
+.app {
+  background: var(--main-background-color);
+  width: 100%;
+  padding: 2px 0;
+  height: 100%;
+  color: var(--primary-font-color);
+  text-transform: capitalize;
+}

@@ -1,0 +1,222 @@
+header {
+  width: 100%;
+  position: fixed;
+  display: grid;
+  z-index: 3;
+  grid-template-columns: 0.5fr 2fr;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: var(--secondary-font-color);
+}
+header .logo {
+  z-index: 3;
+  /* position: relative; */
+}
+header .logo h1 {
+  font-size: 1.7rem;
+
+  margin: 10px 30px;
+}
+header .logo h1 small:nth-child(1) {
+  color: var(--color-one);
+}
+header .logo h1 small:nth-child(2) {
+  color: var(--color-two);
+}
+header .logo h1 small:nth-child(3) {
+  color: var(--color-three);
+}
+header .logo h1 small:nth-child(4) {
+  color: var(--color-four);
+}
+header .logo h1 small:nth-child(5) {
+  color: var(--color-five);
+}
+header .logo h1 small:nth-child(6) {
+  color: var(--primary-btn-color);
+}
+header .logo h1 small:nth-child(7) {
+  color: var(--color-seven);
+}
+
+header .navigations {
+  display: grid;
+  /* position: relative; */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+
+  grid-template-columns: 1.5fr 1fr;
+}
+header .navigations .links {
+  display: grid;
+  grid-template-columns: repeat(3, 0.3fr);
+  justify-content: center;
+  grid-gap: 5px;
+  margin: auto 0;
+  /* position: relative; */
+  text-align: center;
+}
+header .links a {
+  text-decoration: none;
+  color: var(--tetiary-font-color);
+  font-size: 1.2rem;
+}
+header .navigations .sign-in-up {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-gap: 10px;
+}
+header .sign-in-up a {
+  text-decoration: none;
+}
+header .sign-up {
+  background: var(--primary-btn-color);
+  text-align: center;
+  width: 50%;
+  margin: auto 0;
+  border-radius: 15px;
+  padding: 5px 0;
+  color: var(--main-background-color);
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
+}
+header .sign-up:hover {
+  background: var(--tetiary-font-color);
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
+}
+header .login {
+  border: 2px solid var(--tetiary-font-color);
+  width: 95%;
+  color: var(--tetiary-font-color);
+  text-align: center;
+  border-radius: 25px;
+  margin: auto 0;
+  padding: 5px 0;
+  transition: all cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s;
+}
+header .login:hover {
+  background-color: var(--tetiary-font-color);
+  color: var(--main-background-color);
+  transition: all cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s;
+}
+header a.active {
+  color: var(--color-two);
+}
+header a {
+  position: relative;
+}
+header .blob {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: -1;
+}
+header .one {
+  top: -70%;
+  left: 45%;
+  background: var(--color-four);
+}
+header .two {
+  top: -80%;
+  right: -3%;
+  z-index: 1;
+  background: var(--color-two);
+}
+header .three {
+  top: -50%;
+  left: -3%;
+  background: var(--color-six);
+}
+
+.hamburger-btn {
+  display: none;
+  cursor: pointer;
+  z-index: 3;
+  margin: 10px 0;
+}
+.hamburger-btn .line {
+  display: block;
+  height: 3px;
+  margin: 5px auto;
+  width: 35px;
+  border-radius: 15px;
+  background: var(--primary-font-color);
+  transition: transform 0.3s ease-in-out;
+}
+@media screen and (min-width: 850px) {
+  header .nav-menu {
+    display: none;
+  }
+  header .navigations {
+    display: grid;
+  }
+}
+@media screen and (max-width: 850px) {
+  .hamburger-btn.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(145deg);
+  }
+  .hamburger-btn.active .line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-btn.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-145deg);
+  }
+  .hamburger-btn {
+    display: inline-block;
+  }
+  header {
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+  }
+  header .blob {
+    display: none;
+  }
+  header .logo h1 {
+    margin: 10px 20px;
+  }
+  header .navigations {
+    display: none;
+  }
+  header .nav-menu {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    background: var(--color-six);
+    justify-content: center;
+  }
+  header .nav-menu .links {
+    display: grid;
+    margin: 50px 0;
+    text-align: center;
+    transition: all 2s ease-in-out;
+  }
+  header .nav-menu .links a {
+    margin: 15px 0;
+    padding: 5px 0;
+    color: var(--tetiary-font-color);
+    border-bottom: 0.1px solid var(--primary-font-color);
+  }
+  header .nav-menu .links a.active {
+    color: var(--color-two) !important;
+  }
+  .nav-menu .sign-in-up a {
+    display: inline-block;
+
+    margin: 15px 0;
+  }
+  header .sign-in-up {
+    display: grid;
+    width: 70%;
+    margin: 0 15px;
+  }
+  header .login {
+    width: 30%;
+    color: var(--tetiary-font-color);
+  }
+  header .sign-up {
+    width: 30%;
+  }
+  .sign-in-up a {
+    display: none;
+  }
+}
