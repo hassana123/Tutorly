@@ -2,7 +2,7 @@
   width: clamp(200px, 80%, 800px);
   margin: auto;
   height: 84vh;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .login-section form {
   background: rgba(255, 255, 255, 0.3);

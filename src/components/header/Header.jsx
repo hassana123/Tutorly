@@ -1,13 +1,17 @@
 import "./header.css";
 import Image from "../../assets/rand1.jpg";
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Header = () => {
+  const location = useLocation();
   const [menu, setmenu] = useState(false);
   window.addEventListener("resize", () => {
     setmenu(false);
   });
+  useEffect(() => {
+    setmenu(false);
+  }, [location]);
   return (
     <header>
       <div className="logo">

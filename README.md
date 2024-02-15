@@ -47,9 +47,12 @@ After a tutoring session, students can provide ratings and reviews to tutors, he
 #### Payment Integration:
 
 The platform integrates a secure payment system to handle transactions between students and tutors for their tutoring services.
-Technologies Used
-ReactJS: A JavaScript library for building user interfaces.
-Firebase: A comprehensive development platform that provides various tools and services to build and deploy web and mobile applications.
+
+# Technologies Used
+
+#### ReactJS: A JavaScript library for building user interfaces.
+
+#### Firebase: A comprehensive development platform that provides various tools and services to build and deploy web and mobile applications.
 
 # Getting Started
 

@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#Enter a valid email address.The email address should follow the standard format: example@example.com.Example: "john.doe@example.com" is a valid email address.
